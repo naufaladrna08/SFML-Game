@@ -47,17 +47,7 @@ void movePlayer(int mvmt) {
 }
 
 void init() {
-  window.setFramerateLimit(60);
-  text_player.loadFromFile("assets/Player.png");
 
-  spr_player.setTexture(text_player);
-  spr_player.setPosition(px, py);
-  spr_player.setOrigin(text_player.getSize().x / 2, text_player.getSize().y / 2);
-
-  rect.setPosition(800 / 2, 600 / 2);
-  rect.setOrigin(rect.getSize().x / 2, rect.getSize().y / 2);
-  
-  shader.loadFromFile("basicShader.frag", sf::Shader::Fragment);
 }
 
 void draw() {
